@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/formulario.css">
+    <meta charset="utf-8">
+    <title>Fomulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de solicitud de crédito hipotecario</h1>
+    <p>Por favor llene este formulario con la información requerida</p>
+    <br>
+    <p>INFORMACIÓN DEL SOLICITANTE</p>
+    <form action="">
+        <fieldset>
+            <label for="nombres">Ingrese sus nombres: <input type="text" id="nombre" name="nombres" placeholder="Nombres" required/></label>
+            <label for="apellidos">Ingrese sus apellidos: <input type="text" id="apellido" name="apellidos" placeholder="Apellidos" required/></label>
+            <label for="edad">Seleccione su fecha de nacimiento: <input type="date" min="1957-11-11" max="2002-11-11" id="edad" name="age">
+            <label for="email">Ingrese su correo electronico: <input type="email" id="email" placeholder="ejemplo@correo.com" required/></label>
+            <label for="telefono">Ingrese su numero de celular: <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="3110000000" required></label>
+            <label for="selector"> ¿Cuál es su estado civil?
+                <select id="selector">
+                    <option value="">Selecciones uno</option>
+                    <option value="1">Soltero</option>
+                    <option value="2">Casado</option>
+                    <option value="3">Unión libre</option>
+                </select>
+            </label>
+            <label for="selector"> ¿Cuál es su nivel educativo?
+                <select id="selector">
+                    <option value="">Selecciones uno</option>
+                    <option value="1">Primaria</option>
+                    <option value="2">Secundaria</option>
+                    <option value="3">Pregrado</option>
+                    <option value="3">Postgrado</option>
+                </select>
+            </label>
+            <br>
+            <p>¿Cuál es su género?</p>
+            <label><input type="radio" class="enlinea" name="genero">Masculino</label>
+            <label><input type="radio" class="enlinea" name="genero">Femenino</label>
+            <label><input type="radio" class="enlinea" name="genero">Otro</label>
+            <br>
+            <p>¿Cuál es su contratación laboral?</p>
+            <label><input type="radio" class="enlinea" name="empleo">Empleado</label>
+            <label><input type="radio" class="enlinea" name="empleo">Independiente</label>
+            <label><input type="radio" class="enlinea" name="empleo">Estudiante</label>
+            <label><input type="radio" class="enlinea" name="empleo">Otro</label>
+        </fieldset>
+        <fieldset>
+        <p>INFORMACIÓN FINANCIERA</p>
+            <label for="dinero">Digite sus ingresos<input type="number" placeholder="Ingresos mensuales" min="1000000" step="50000" name="dinero" id="dineros" required/></label>
+            <label for="gastos">Digite sus gastos<input type="number" placeholder="Gastos mensuales" min="100000" step="10000" name="gastos" id="gosto" required/></label>
+            <label for="selector">Seleccione el plazo del credito 
+                <select id="selector">
+                    <option value="">Selecciones uno</option>
+                    <option value="1">60 meses</option>
+                    <option value="2">120 mesesia</option>
+                    <option value="3">180 meses</option>
+                    <option value="3">240 meses</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+        <p>TIPO DE VIVIENDA</p>
+            <label><input type="radio" class="enlinea" name="tipo">no vis (mas de 150 SMMML)</label>
+            <label><input type="radio" class="enlinea" name="tipo">vis (hasta de 150 SMMML)</label>
+            <label><input type="radio" class="enlinea" name="tipo">vip (hasta 150 SMMML)</label>
+        </fieldset>
+        <fieldset>
+            <p>ESTADO DE LA VIVIENDA</p>
+            <label><input type="radio" class="enlinea" name="estado">Nueva</label>
+            <label><input type="radio" class="enlinea" name="estado">Usada</label>
+        </fieldset>
+        <fieldset>
+            <p>DOCUMENTOS</p>
+            <label for="personal">Adjunta una foto tuya:<input type="file" id="foto" name="personal"/></label>
+            <label for="cedula">Adjunta una foto de tu cedula:<input type="file" id="cedulas" name="cedula"/></label>
+            <label for="nomina">Adjunta ultimos tres despendibles de nomina o declaración de ingresos:<input type="file" id="nominass" name="nomina"/></label>
+            <label for="documento">Adjunta documentos releantes:<input type="file" id="documentos" name="documento"/></label>
+        </fieldset>
+        <fieldset>
+            <p>INFORMACIÓN ADICIONAL</p>
+            <label for="informacio">Si tiene comentario u observaciones escribalos aqui:<textarea rows="3" cols="30" placeholder="Escriba la información relevante" id="informacions" name="informacion"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <label for="selector"> Porque medio se enteró de nosostros?
+                <select id="selector">
+                    <option value="">Selecciones uno</option>
+                    <option value="1">Pagina web</option>
+                    <option value="2">Noticiero</option>
+                    <option value="3">Radio</option>
+                    <option value="4">Otro</option>
+                </select>
+        </fieldset>
+        <label><input type="checkbox" required class="enlinea"> Acepto los <a target="_blanck" href="https://corporativo.compensar.com/proteccion-de-datos/">terminos y condiciones</a></label>
+        <input type="submit" value="Submit"/>
+    </form>
+    
+</body>
+</html>

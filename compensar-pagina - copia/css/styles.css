@@ -1,0 +1,100 @@
+body.lienzo{
+    width:100%;
+    height: 100vh;
+    margin: 0 0.5rem;
+    background-color: #28284b;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+.espacio{
+    width: 100%;
+    height: 25px;
+   
+}
+
+h1, p{
+    margin: 1em;
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    max-width: 600px;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+    padding-bottom: 2em;
+
+}
+
+input, textarea, select{
+    width:100%;
+}
+
+input, textarea {
+    color: #ffffff;
+    min-height: 2em;
+}
+
+.enlinea{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+
+}
+
+input.InputStyle{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    min-height: 2em;
+    width:100%;
+    border: 10px 0 0 0;
+    display:block;
+    width: 60%;
+    min-width: 300px;
+    margin: 1em auto;
+    text-align: center; 
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+}
+
+input.InputStyle:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(232, 241, 237);
+
+
+}
+
+#selector{
+    width: 300px;
+}
+
+#selector2{
+    width: 300px;
+}
+
+#result{
+    background-color: white;
+    border-radius: 5rem;
+    color: black;
+    font-weight: bold;
+    max-width: 300px;
+}
+
+h5{
+    text-align: center;
+}
+
+
+
+
+
+
+  
+
+
